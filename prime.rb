@@ -4,7 +4,7 @@ def prime?(number)
   elsif (number <= 1)
     return false
   end
-  digits = [2, 3, 4, 5, 6, 7, 8, 9]
+  digits = 2..1000000.to_a
   digits.each do |digit|
     if (number % digit == 0)
       return false
